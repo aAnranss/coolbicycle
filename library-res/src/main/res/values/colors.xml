@@ -10,4 +10,5 @@
     <color name="appColor">#FF2041</color>
     <color name="appBackColor">#F4F3F3</color>
     <color name="viewLineColor">#E0E0E0</color>
+    <color name="textColorPrivacy">#038C33</color>
 </resources>

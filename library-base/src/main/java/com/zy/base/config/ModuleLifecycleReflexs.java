@@ -7,15 +7,17 @@ package com.zy.base.config;
 public class ModuleLifecycleReflexs {
     //设置各个组件的全类名
 
-    private static final String BaseInit = "com.zy.base.base.BaseModuleInit";
+    private static final String BaseInit        = "com.zy.base.base.BaseModuleInit";
     //主业务模块
-    private static final String MainInit = "com.zy.main.MainModuleInit";
+    private static final String MainInit        = "com.zy.main.MainModuleInit";
     //首页业务模块
-    private static final String CommunityInit = "com.zy.communityInit.CommunityInitModuleInit";
-    //添加用户登陆模块
-    private static final String SignInit = "com.zy.sign.SignModuleInit";
+    private static final String CommunityInit   = "com.zy.communityInit.CommunityInitModuleInit";
     //用户模块
-    private static final String UserInit = "com.zy.user.UserModuleInit";
+    private static final String UserInit        = "com.zy.user.UserModuleInit";
+    //添加用户登陆模块
+    private static final String SignInit        = "com.zy.sign.SignModuleInit";
+    //用户注册模块
+    private static final String RegisterInit    = "com.zy.register.RegisterModuleInit";
 
-    public static String[] initModuleNames = {BaseInit,MainInit,CommunityInit,SignInit,UserInit};
+    public static String[] initModuleNames = {BaseInit,MainInit,CommunityInit,SignInit,UserInit,RegisterInit};
 }

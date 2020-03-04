@@ -32,4 +32,16 @@ public class RouterActivityPath {
         /*用户详情*/
         public static final String PAGER_USERDETAIL = USER + "/UserDetail";
     }
+
+    /**
+     * 注册组件
+     */
+    public static class Register {
+        private static final String REGISTER = "/register";
+        /*注册模块*/
+        public static final String PAGER_REGISTER = REGISTER + "/Register";
+    }
+    
+
+
 }

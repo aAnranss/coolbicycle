@@ -10,6 +10,8 @@ import androidx.databinding.ObservableInt;
 
 import com.zy.base.contract._Login;
 import com.zy.base.globle.SPKeyGlobal;
+import com.zy.register.ui.RegisterActivity;
+
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -82,6 +84,38 @@ public class LoginViewModel extends BaseViewModel {
             login();
         }
     });
+
+    //忘记密码按钮的点击事件
+    public BindingCommand forgetPasswrodOnClickCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            forgetPasswrod();
+        }
+    });
+
+    //注册按钮的点击事件
+    public BindingCommand registerOnClickCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            register();
+        }
+    });
+
+    /**
+     * 跳转至注册页面
+     */
+    private void register() {
+        startActivity(RegisterActivity.class);
+        finish();
+
+    }
+
+    /**
+     * 跳转至忘记密码页面
+     */
+    private void forgetPasswrod() {
+        ToastUtils.showShort("忘记密码！");
+    }
 
     /**
      * 网络模拟一个登陆操作

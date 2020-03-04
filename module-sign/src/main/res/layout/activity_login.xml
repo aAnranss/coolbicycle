@@ -13,6 +13,7 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
+        <!-- 背景 -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,11 +29,13 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <!-- logo -->
             <ImageView
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:src="@mipmap/logo" />
 
+            <!-- 用户名 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -75,6 +78,7 @@
                     binding:onClickCommand="@{viewModel.clearUserNameOnClickCommand}" />
             </LinearLayout>
 
+            <!-- 密码 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -118,6 +122,7 @@
                     binding:onClickCommand="@{viewModel.passwordShowSwitchOnClickCommand}" />
             </LinearLayout>
 
+            <!-- 注册与忘记密码按钮 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -132,7 +137,8 @@
                     android:text="还没有账号？注册一个吧！"
                     android:textColor="@color/colorPrimaryDark"
                     android:background="@color/white"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp"
+                    binding:onClickCommand="@{viewModel.registerOnClickCommand}"/>
                 <TextView
                     android:id="@+id/forget_password_btn"
                     android:layout_width="wrap_content"
@@ -142,9 +148,11 @@
                     android:text="忘记密码"
                     android:textColor="@color/colorPrimaryDark"
                     android:background="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    binding:onClickCommand="@{viewModel.forgetPasswrodOnClickCommand}"/>
             </RelativeLayout>
 
+            <!-- 登陆按钮 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -162,8 +170,6 @@
                     android:textSize="18sp"
                     binding:onClickCommand="@{viewModel.loginOnClickCommand}" />
             </LinearLayout>
-
-
 
         </LinearLayout>
 

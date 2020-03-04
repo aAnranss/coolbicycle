@@ -63,6 +63,8 @@ dependencies {
         implementation project(':module-sign')
         //添加用户模块
         implementation project(':module-user')
+        //添加用户注册模块
+        implementation project(':module-register')
     }
 }
 

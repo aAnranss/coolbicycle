@@ -3,11 +3,11 @@ android {
     defaultConfig{
         //如果是独立模块，则使用当前组件的包名
         if (isBuildModule.toBoolean()) {
-            applicationId "com.zy.sign"
+            applicationId "com.zy.register"
         }
     }
     //统一资源前缀，规范资源引用
-    //resourcePrefix "sign_"
+    //resourcePrefix "register_"
 
     sourceSets {
         main(){
@@ -23,6 +23,4 @@ dependencies {
     api project(':library-base')
     //组件中依赖阿里路由编译框架
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
-    //依赖module-register 实现跳转至注册页面
-    implementation project(path: ':module-register')
 }
