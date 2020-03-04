@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
+import androidx.lifecycle.Observer;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.material.tabs.TabLayout;
@@ -41,5 +42,15 @@ public class CommunityFragment extends BaseFragment<FragmentCommunityBinding, Co
         binding.tabs.setupWithViewPager(binding.viewPager,true);
         binding.viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(binding.tabs));
         viewModel.addPage();
+    }
+
+    @Override
+    public void initViewObservable() {
+        viewModel.itemClickEvent.observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                //ToastUtils.showShort(s);
+            }
+        });
     }
 }

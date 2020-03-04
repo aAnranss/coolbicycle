@@ -14,4 +14,22 @@ public class RouterActivityPath {
         /*主业务界面*/
         public static final String PAGER_MAIN = MAIN +"/Main";
     }
+
+    /**
+     * 身份验证组件
+     */
+    public static class Sign {
+        private static final String SIGN = "/sign";
+        /*登录界面*/
+        public static final String PAGER_LOGIN = SIGN + "/Login";
+    }
+
+    /**
+     * 用户组件
+     */
+    public static class User {
+        private static final String USER = "/user";
+        /*用户详情*/
+        public static final String PAGER_USERDETAIL = USER + "/UserDetail";
+    }
 }

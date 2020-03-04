@@ -11,7 +11,11 @@ public class ModuleLifecycleReflexs {
     //主业务模块
     private static final String MainInit = "com.zy.main.MainModuleInit";
     //首页业务模块
-    private static final String HomeInit = "com.zy.home.HomeModuleInit";
+    private static final String CommunityInit = "com.zy.communityInit.CommunityInitModuleInit";
+    //添加用户登陆模块
+    private static final String SignInit = "com.zy.sign.SignModuleInit";
+    //用户模块
+    private static final String UserInit = "com.zy.user.UserModuleInit";
 
-    public static String[] initModuleNames = {BaseInit,MainInit,HomeInit};
+    public static String[] initModuleNames = {BaseInit,MainInit,CommunityInit,SignInit,UserInit};
 }

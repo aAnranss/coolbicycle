@@ -57,10 +57,12 @@ dependencies {
     } else {
         //添加主业务模块
         implementation project(':module-main')
-        //添加应用模块
-        //implementation project(':module-home')
-        //添加地图模块
-        //implementation project(':module-map')
+        //添加社区模块
+        implementation project(':module-community')
+        //添加登陆注册模块
+        implementation project(':module-sign')
+        //添加用户模块
+        implementation project(':module-user')
     }
 }
 

@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zy.sign">
+    <application>
+        <activity android:name="com.zy.sign.ui.LoginActivity"/>
+    </application>
+</manifest>

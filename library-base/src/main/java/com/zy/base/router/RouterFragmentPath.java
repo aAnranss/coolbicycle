@@ -7,11 +7,20 @@ package com.zy.base.router;
  */
 public class RouterFragmentPath {
     /**
-     * 首页组件
+     * 社区组件
      */
-    public static class Home {
-        private static final String HOME = "/home";
-        /*首页*/
-        public static final String PAGER_HOME = HOME + "/Home";
+    public static class Community {
+        private static final String COMMUNITY = "/community";
+        //社区
+        public static final String PAGER_COMMUNITY = COMMUNITY + "/Community";
+    }
+
+    /**
+     * 用户组件
+     */
+    public static class User {
+        private static final String USER = "/user";
+        /*我的*/
+        public static final String PAGER_ME = USER + "/Me";
     }
 }

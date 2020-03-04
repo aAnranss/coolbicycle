@@ -1,2 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zy.main" />
+    package="com.zy.main" >
+    <application>
+        <!-- 在自己的组件里注册Activity -->
+        <activity android:name="com.zy.main.ui.MainActivity"></activity>
+    </application>
+
+</manifest>

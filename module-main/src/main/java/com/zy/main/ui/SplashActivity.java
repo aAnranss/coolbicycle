@@ -13,22 +13,24 @@ import androidx.annotation.Nullable;
  */
 public class SplashActivity extends Activity {
 
+    //设置延迟时间
+    private final int SKIP_DELAY_TIME = 3000;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         //在SplashActivity停留3秒，随即跳转至MainActivity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 initMain();
             }
-        },3000);
+        },SKIP_DELAY_TIME);
     }
 
     //加载主页面
     private void initMain() {
-        startActivity(new Intent(this,MainActivity.class));
-        finish();
+        this.startActivity(new Intent(this,MainActivity.class));
+        this.finish();
     }
 }

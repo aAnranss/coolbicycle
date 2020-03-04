@@ -46,7 +46,6 @@ public class CommunityViewModel extends BaseViewModel {
         public CharSequence getPageTitle(int position, ViewPagerItemViewModel item) {
             String[] str = {"论坛","博客","咨询"};
             return str[position] ;
-            //return "条目" + position;
         }
     };
     //给ViewPager添加Adpter，请使用自定义的Adapter继承BindingViewPagerAdapter，重写onBindBinding方法
@@ -55,7 +54,7 @@ public class CommunityViewModel extends BaseViewModel {
     public BindingCommand<Integer> onPageSelectedCommand = new BindingCommand<>(new BindingConsumer<Integer>() {
         @Override
         public void call(Integer index) {
-            ToastUtils.showShort("ViewPager切换：" + index);
+            //ToastUtils.showShort("ViewPager切换：" + index);
         }
     });
 }

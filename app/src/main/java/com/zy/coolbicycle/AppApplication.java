@@ -1,8 +1,8 @@
 package com.zy.coolbicycle;
 
 
-import com.zy.base.config.ModuleLifecycleConfig;
 
+import com.zy.base.config.ModuleLifecycleConfig;
 import me.goldze.mvvmhabit.base.BaseApplication;
 
 public class AppApplication extends BaseApplication {
