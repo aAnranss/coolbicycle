@@ -24,4 +24,6 @@ public class RegisterActivity extends BaseActivity<ActivityRegisterBinding,Regis
     public int initVariableId() {
         return BR.viewModel;
     }
+
+
 }

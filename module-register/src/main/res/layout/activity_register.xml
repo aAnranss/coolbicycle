@@ -78,6 +78,7 @@
                     android:background="@null"
                     android:gravity="center_vertical"
                     android:hint="请输入用户名"
+                    android:text="@={viewModel.userName}"
                     android:layout_marginLeft="2dp"
                     android:textSize="14dp"
                     android:inputType="text"/>
@@ -113,6 +114,7 @@
                     android:background="@null"
                     android:gravity="center_vertical"
                     android:hint="请输入密码"
+                    android:text="@={viewModel.password}"
                     android:inputType="textPassword"
                     android:layout_marginLeft="2dp"
                     android:textSize="14dp"/>
@@ -156,7 +158,8 @@
                         android:layout_marginLeft="2dp"
                         android:background="@null"
                         android:gravity="center_vertical"
-                        android:hint="请输入短信验证码"
+                        android:hint="请输入验证码"
+                        android:text="@={viewModel.verificationCode}"
                         android:inputType="text"
                         android:textSize="14dp" />
 
@@ -206,6 +209,7 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:hint="请输入手机号码"
+                    android:text="@={viewModel.phoneNumber}"
                     android:layout_marginLeft="2dp"
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="16dp"
@@ -263,7 +267,8 @@
                     android:background="?selectableItemBackground"
                     android:text="注册"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    binding:onClickCommand="@{viewModel.registerOnClickCommand}"/>
             </LinearLayout>
 
         </LinearLayout>

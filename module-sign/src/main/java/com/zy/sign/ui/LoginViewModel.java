@@ -8,9 +8,10 @@ import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
 import androidx.databinding.ObservableInt;
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.zy.base.contract._Login;
 import com.zy.base.globle.SPKeyGlobal;
-import com.zy.register.ui.RegisterActivity;
+import com.zy.base.router.RouterActivityPath;
 
 import java.util.concurrent.TimeUnit;
 
@@ -97,17 +98,19 @@ public class LoginViewModel extends BaseViewModel {
     public BindingCommand registerOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            register();
+            toRegister();
         }
     });
 
     /**
      * 跳转至注册页面
      */
-    private void register() {
-        startActivity(RegisterActivity.class);
-        finish();
+    private void toRegister() {
 
+        //代替startActivity(RegisterActivity.class)，完成跳转至注册页
+        ARouter.getInstance()
+                .build(RouterActivityPath.Register.PAGER_REGISTER)
+                .navigation();
     }
 
     /**

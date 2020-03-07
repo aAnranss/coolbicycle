@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 public class SplashActivity extends Activity {
 
     //设置延迟时间
-    private final int SKIP_DELAY_TIME = 3000;
+    private final int SKIP_DELAY_TIME = 1000;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
