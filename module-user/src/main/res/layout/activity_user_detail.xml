@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:binding="http://schemas.android.com/apk/res-auto">
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
             name="viewModel"
@@ -12,24 +13,12 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="我是用户组件，得到参数："
-            android:textColor="@color/textColor" />
+        <include layout="@layout/user_header"/>
 
-        <EditText
+        <view
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@={viewModel.nameObservable}"
-            android:textColor="@color/textColor" />
+            android:layout_height="1dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="回传参数"
-            binding:onClickCommand="@{viewModel.backOnClickCommand}" />
-
+        <include layout="@layout/activity_user_option_menu"/>
     </LinearLayout>
 </layout>

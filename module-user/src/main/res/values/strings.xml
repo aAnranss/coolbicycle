@@ -1,4 +1,4 @@
 <resources>
     <string name="user_name">用户组件</string>
-    <string name="user_info">用户：</string>
+    <string name="user_info"></string>
 </resources>

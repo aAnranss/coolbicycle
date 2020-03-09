@@ -48,6 +48,7 @@ public class MeViewModel extends BaseViewModel {
             loginBtnVisible.set(View.VISIBLE);
         }
     }
+
     //登录按钮点击事件
     public BindingCommand startLoginOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
@@ -68,11 +69,11 @@ public class MeViewModel extends BaseViewModel {
         }
     });
     //退出登录按钮点击事件
-    public BindingCommand outLoginOnClickCommand = new BindingCommand(new BindingAction() {
+    /*public BindingCommand outLoginOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
             SPUtils.getInstance().put(SPKeyGlobal.USER_INFO, "");
             initData();
         }
-    });
+    });*/
 }
