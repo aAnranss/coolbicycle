@@ -1,13 +1,7 @@
 apply from: "../module.build.gradle"
 android {
-    defaultConfig{
-        //如果是独立模块，则使用当前组件的包名
-        if (isBuildModule.toBoolean()) {
-            applicationId "com.zy.sign"
-        }
-    }
     //统一资源前缀，规范资源引用
-    //resourcePrefix "sign_"
+    //resourcePrefix "ppolicy_"
 
     sourceSets {
         main(){

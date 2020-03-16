@@ -65,6 +65,10 @@ dependencies {
         implementation project(':module-user')
         //添加用户注册模块
         implementation project(':module-register')
+        //添加隐私政策模块
+        implementation project(':module-ppolicy')
+        //添加用户服务协议模块
+        implementation project(':module-spolicy')
     }
 }
 

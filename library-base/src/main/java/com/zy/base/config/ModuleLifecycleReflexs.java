@@ -18,6 +18,10 @@ public class ModuleLifecycleReflexs {
     private static final String SignInit        = "com.zy.sign.SignModuleInit";
     //用户注册模块
     private static final String RegisterInit    = "com.zy.register.RegisterModuleInit";
+    //隐私政策
+    private static final String PrivacyPolicyInit = "com.zy.ppolicy.PrivacyPolicyModuleInit";
+    //用户服务协议
+    private static final String ServicePolicyInit = "com.zy.spolicy.ServicePolicyModuleInit";
 
-    public static String[] initModuleNames = {BaseInit,MainInit,CommunityInit,SignInit,UserInit,RegisterInit};
+    public static String[] initModuleNames = {BaseInit,MainInit,CommunityInit,SignInit,UserInit,RegisterInit,PrivacyPolicyInit,ServicePolicyInit};
 }

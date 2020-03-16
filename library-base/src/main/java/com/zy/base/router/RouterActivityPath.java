@@ -41,7 +41,24 @@ public class RouterActivityPath {
         /*注册模块*/
         public static final String PAGER_REGISTER = REGISTER + "/Register";
     }
-    
+
+    /**
+     * 隐私政策组件
+     */
+    public static class PrivacyPolicy {
+        private static final String PRIVACYPOLICY = "/privacypolicy";
+        /*注册模块*/
+        public static final String PAGER_PRIVACY_POLICY = PRIVACYPOLICY + "/PrivacyPolicy";
+    }
+
+    /**
+     * 用户服务协议组件
+     */
+    public static class ServicePolicy {
+        private static final String SERVICEPOLICY = "/servicepolicy";
+        /*注册模块*/
+        public static final String PAGER_SERVICE_POLICY = SERVICEPOLICY + "/ServicePolicy";
+    }
 
 
 }
