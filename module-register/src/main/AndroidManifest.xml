@@ -1,6 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zy.register">
-    <application>
-        <activity android:name=".ui.RegisterActivity"/>
-    </application>
-</manifest>

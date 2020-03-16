@@ -1,2 +1,2 @@
-include ':app', ':library-base', ':library-res', ':module-main', ':module-community', ':module-user', ':module-sign', ':module-register', ':library-annotation', ':module-ppolicy', ':module-spolicy'
+include ':app', ':library-base', ':library-res', ':module-main', ':module-community', ':module-user', ':module-sign',
 rootProject.name='CoolBicycle'

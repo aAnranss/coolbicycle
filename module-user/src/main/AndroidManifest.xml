@@ -2,5 +2,6 @@
     package="com.zy.user">
     <application>
         <activity android:name="com.zy.user.ui.activity.UserDetailActivity"/>
+
     </application>
 </manifest>
