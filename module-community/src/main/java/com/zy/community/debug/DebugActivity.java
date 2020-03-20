@@ -18,7 +18,7 @@ public class DebugActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = new Intent(this, ContainerActivity.class);
-        intent.putExtra("fragment", CommunityFragment.class.getCanonicalName());
+        intent.putExtra("fragment_recommend", CommunityFragment.class.getCanonicalName());
         this.startActivity(intent);
         finish();
     }

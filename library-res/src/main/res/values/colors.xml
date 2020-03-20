@@ -11,4 +11,7 @@
     <color name="appBackColor">#F4F3F3</color>
     <color name="viewLineColor">#E0E0E0</color>
     <color name="textColorPrivacy">#038C33</color>
+    <color name="btnColorWhite">#FFFFFF</color>
+    <color name="btnColorRed">#D51717</color>
+    <color name="btnColorBlue">#1E90FF</color>
 </resources>

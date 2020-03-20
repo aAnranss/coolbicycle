@@ -16,6 +16,7 @@ import me.goldze.mvvmhabit.base.BaseActivity;
  */
 @Route(path = RouterActivityPath.Register.PAGER_REGISTER)
 public class RegisterActivity extends BaseActivity<ActivityRegisterBinding, RegisterViewModel> {
+
     @Override
     public int initContentView(Bundle savedInstanceState) {
         return R.layout.activity_register;

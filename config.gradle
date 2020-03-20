@@ -22,7 +22,7 @@ ext {
             'appcompat-v7'            : "com.android.support:appcompat-v7:${versions["support-version"]}",
             'recyclerview-v7'         : "com.android.support:recyclerview-v7:${versions["support-version"]}",
             'support-v13'             : "com.android.support:support-v13:${versions["support-version"]}",
-            'support-fragment'        : "com.android.support:support-fragment:${versions["support-version"]}",
+            'support-fragment_recommend'        : "com.android.support:support-fragment_recommend:${versions["support-version"]}",
             'design'                  : "com.android.support:design:${versions["support-version"]}",
             'animated-vector-drawable': "com.android.support:animated-vector-drawable:${versions["support-version"]}",
             'junit'                   : "junit:junit:${versions["junit-version"]}",

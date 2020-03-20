@@ -1,7 +1,10 @@
 package com.zy.sign.viewmodel;
 
 import android.app.Application;
+import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -9,8 +12,12 @@ import androidx.databinding.ObservableField;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.zy.base.router.RouterActivityPath;
+import com.zy.base.util.CodeUtils;
+import com.zy.sign.R;
+import com.zy.sign.databinding.ActivityRegisterBinding;
+import com.zy.sign.view.RegisterActivity;
 
-
+import me.goldze.mvvmhabit.base.BaseActivity;
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.goldze.mvvmhabit.binding.command.BindingAction;
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
@@ -21,14 +28,11 @@ import me.goldze.mvvmhabit.utils.ToastUtils;
  */
 public class RegisterViewModel extends BaseViewModel {
 
-
     //用户名的绑定
     public ObservableField<String> userName = new ObservableField<>("");
     //密码的绑定
     public ObservableField<String> password = new ObservableField<>("");
-    //用户名的绑定
-    public ObservableField<String> verificationCode = new ObservableField<>("");
-    //密码的绑定
+    //手机号的绑定
     public ObservableField<String> phoneNumber = new ObservableField<>("");
 
     public RegisterViewModel(@NonNull Application application) {
@@ -81,10 +85,6 @@ public class RegisterViewModel extends BaseViewModel {
             ToastUtils.showShort("请输入密码!");
             return;
         }
-        if (TextUtils.isEmpty(verificationCode.get())) {
-            ToastUtils.showShort("请输入验证码!");
-            return;
-        }
         if (TextUtils.isEmpty(phoneNumber.get())) {
             ToastUtils.showShort("请输入手机号!");
             return;
@@ -96,5 +96,6 @@ public class RegisterViewModel extends BaseViewModel {
                 .navigation();
         finish();
     }
+
 
 }

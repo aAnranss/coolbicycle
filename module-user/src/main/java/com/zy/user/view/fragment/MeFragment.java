@@ -1,4 +1,4 @@
-package com.zy.user.ui.fragment;
+package com.zy.user.view.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import com.zy.base.router.RouterFragmentPath;
 import com.zy.user.BR;
 import com.zy.user.R;
 import com.zy.user.databinding.FragmentMeBinding;
-import com.zy.user.ui.viewmodel.MeViewModel;
+import com.zy.user.viewmodel.MeViewModel;
 
 import me.goldze.mvvmhabit.base.BaseFragment;
 

@@ -63,6 +63,10 @@ dependencies {
         implementation project(':module-sign')
         //添加用户模块
         implementation project(':module-user')
+        //添加用户设置模块
+        implementation project(':module-setting')
+        //添加反馈模块
+        implementation project(':module-feedback')
     }
 }
 

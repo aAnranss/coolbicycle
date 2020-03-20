@@ -1,9 +1,8 @@
-package com.zy.user.ui.viewmodel;
+package com.zy.user.viewmodel;
 
 import android.app.Application;
 import android.text.TextUtils;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
 import androidx.databinding.ObservableInt;
@@ -20,12 +19,15 @@ import me.goldze.mvvmhabit.binding.command.BindingAction;
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
 import me.goldze.mvvmhabit.bus.RxBus;
 import me.goldze.mvvmhabit.bus.RxSubscriptions;
+import me.goldze.mvvmhabit.bus.event.SingleLiveEvent;
 import me.goldze.mvvmhabit.utils.SPUtils;
-
 /**
  * Created by 卢文钏 on 2020/3/3
  */
 public class MeViewModel extends BaseViewModel {
+
+    public SingleLiveEvent<String> itemClickEvent = new SingleLiveEvent<>();
+
     public ObservableInt loginBtnVisible = new ObservableInt();
     public ObservableField<String> userInfoObservable = new ObservableField();
     private Disposable subscribe;
@@ -68,12 +70,32 @@ public class MeViewModel extends BaseViewModel {
             RxSubscriptions.add(subscribe);
         }
     });
-    //退出登录按钮点击事件
-    /*public BindingCommand outLoginOnClickCommand = new BindingCommand(new BindingAction() {
+
+    public BindingCommand feedbackBtnOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            SPUtils.getInstance().put(SPKeyGlobal.USER_INFO, "");
-            initData();
+            ARouter.getInstance()
+                    .build(RouterActivityPath.Feedback.PAGER_FEEDBACK)
+                    .navigation();
         }
-    });*/
+    });
+
+
+    //设置按钮的点击事件
+    public BindingCommand settingBtnOnCommand = new BindingCommand(new BindingAction() {
+        @Override
+        public void call() {
+            ARouter.getInstance()
+                    .build(RouterActivityPath.Setting.PAGER_SETTING)
+                    .navigation();
+        }
+    });
+
+
+
+
+
+
+
+
 }

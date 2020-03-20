@@ -26,9 +26,10 @@
         <!--顶部导航-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
+            android:gravity="center"
             android:background="@color/white"
             android:orientation="horizontal">
 
@@ -67,7 +68,7 @@
             <!-- 昵称 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="10dp"
                 android:background="@mipmap/user_edit"
                 android:gravity="center"
@@ -94,6 +95,7 @@
                     android:background="@null"
                     android:gravity="center_vertical"
                     android:hint="请输入用户名"
+                    android:singleLine="true"
                     android:inputType="text"
                     android:text="@={registerViewModel.userName}"
                     android:textSize="14dp" />
@@ -103,7 +105,7 @@
             <!-- 密码 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="10dp"
                 android:background="@mipmap/user_edit"
                 android:gravity="center"
@@ -132,74 +134,15 @@
                     android:hint="请输入密码"
                     android:inputType="textPassword"
                     android:text="@={registerViewModel.password}"
+                    android:singleLine="true"
                     android:textSize="14dp" />
-
-            </LinearLayout>
-
-            <!-- 验证码 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="68dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center">
-
-                <!-- 验证码输入框 -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:layout_weight="3"
-                    android:background="@mipmap/user_edit"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="16sp">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:src="@mipmap/icon_code" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <EditText
-                        android:id="@+id/register_ET_verificationcode"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_marginLeft="2dp"
-                        android:background="@null"
-                        android:gravity="center_vertical"
-                        android:hint="请输入验证码"
-                        android:inputType="text"
-                        android:text="@={registerViewModel.verificationCode}"
-                        android:textSize="14dp" />
-
-                </LinearLayout>
-
-                <!-- 验证码图片 -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="right"
-                    android:layout_weight="2"
-                    android:background="@color/colorPrimaryDark">
-
-                    <ImageView
-                        android:id="@+id/verification_code"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
-                </LinearLayout>
 
             </LinearLayout>
 
             <!-- 手机号 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="10dp"
                 android:background="@mipmap/user_edit"
                 android:gravity="center"
@@ -228,6 +171,7 @@
                     android:gravity="center_vertical"
                     android:hint="请输入手机号码"
                     android:inputType="phone"
+                    android:singleLine="true"
                     android:text="@={registerViewModel.phoneNumber}"
                     android:textColorHint="@android:color/darker_gray"
                     android:textSize="16dp" />
@@ -277,9 +221,9 @@
             <!-- 注册按钮 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="16dp"
-                android:background="@mipmap/btn_login"
+                android:background="@drawable/btn"
                 android:orientation="vertical"
                 android:padding="6dp">
 
@@ -289,7 +233,7 @@
                     android:background="?selectableItemBackground"
                     android:text="注册"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
+                    android:textSize="24dp"
                     binding:onClickCommand="@{registerViewModel.registerOnClickCommand}" />
             </LinearLayout>
 

@@ -3,7 +3,6 @@ package com.zy.sign.viewmodel;
 import android.app.Application;
 import android.text.TextUtils;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
 import androidx.databinding.ObservableInt;
@@ -12,7 +11,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.zy.base.contract._Login;
 import com.zy.base.globle.SPKeyGlobal;
 import com.zy.base.router.RouterActivityPath;
-import com.zy.sign.view.RegisterActivity;
+import com.zy.base.router.RouterFragmentPath;
 
 import java.util.concurrent.TimeUnit;
 
@@ -109,7 +108,7 @@ public class LoginViewModel extends BaseViewModel {
      * 跳转至忘记密码页面
      */
     private void forgetPasswrod() {
-        ToastUtils.showShort("忘记密码！");
+
     }
 
     /**

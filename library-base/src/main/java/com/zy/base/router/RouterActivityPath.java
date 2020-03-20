@@ -60,5 +60,39 @@ public class RouterActivityPath {
         public static final String PAGER_SERVICE_POLICY = SERVICEPOLICY + "/ServicePolicy";
     }
 
+    /**
+     * 设置组件
+     */
+    public static class Setting {
+        private static final String SETTING = "/setting";
+        /*设置模块*/
+        public static final String PAGER_SETTING = SETTING + "/Setting";
+    }
+
+    /**
+     * 反馈组件
+     */
+    public static class Feedback {
+        private static final String FEEDBACK = "/feedback";
+        /*反馈模块*/
+        public static final String PAGER_FEEDBACK = FEEDBACK + "/Feedback";
+    }
+
+    /**
+     * 关于组件
+     */
+    public static class About {
+        private static final String ABOUT = "/about";
+        /*反馈模块*/
+        public static final String PAGER_ABOUT = ABOUT + "/About";
+    }
+    /**
+     * 忘记密码组件
+     */
+    public static class FindPassword {
+        private static final String FINDPASSWORD = "/findpassword";
+        /*忘记密码模块*/
+        public static final String PAGER_FINDPASSWORD = FINDPASSWORD + "/FindPassword";
+    }
 
 }

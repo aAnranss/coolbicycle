@@ -3,7 +3,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.zy.user.ui.viewmodel.MeViewModel" />
+            type="com.zy.user.viewmodel.MeViewModel" />
         <import type="android.view.View"/>
     </data>
 

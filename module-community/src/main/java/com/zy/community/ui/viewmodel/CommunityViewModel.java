@@ -10,6 +10,9 @@ import com.zy.community.BR;
 import com.zy.community.R;
 import com.zy.community.ui.adapter.ViewPagerBindingAdapter;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
 import me.goldze.mvvmhabit.binding.command.BindingConsumer;
@@ -23,6 +26,7 @@ import me.tatarka.bindingcollectionadapter2.ItemBinding;
  */
 public class CommunityViewModel extends BaseViewModel {
     public SingleLiveEvent<String> itemClickEvent = new SingleLiveEvent<>();
+
     public CommunityViewModel(@NonNull Application application) {
         super(application);
     }

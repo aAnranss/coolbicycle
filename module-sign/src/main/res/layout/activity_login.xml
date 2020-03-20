@@ -10,8 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
+        android:layout_height="match_parent">
 
         <!-- 背景 -->
         <ImageView
@@ -38,7 +37,7 @@
             <!-- 用户名 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="34dp"
                 android:background="@mipmap/user_edit"
                 android:gravity="center"
@@ -67,6 +66,7 @@
                     android:textColor="@color/textColor"
                     android:textColorHint="@color/textColorHint"
                     android:textSize="16sp"
+                    android:singleLine="true"
                     binding:onFocusChangeCommand="@{loginViewModel.onFocusChangeCommand}" />
 
                 <ImageView
@@ -81,7 +81,7 @@
             <!-- 密码 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="10dp"
                 android:background="@mipmap/user_edit"
                 android:gravity="center"
@@ -111,7 +111,8 @@
                     android:text="@={loginViewModel.password}"
                     android:textColor="@color/textColor"
                     android:textColorHint="@color/textColorHint"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:singleLine="true"/>
 
                 <ImageView
                     android:id="@+id/iv_swich_passwrod"
@@ -145,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="8dp"
-                    android:text="忘记密码"
+                    android:text="忘记密码?"
                     android:textColor="@color/colorPrimaryDark"
                     android:background="@color/white"
                     android:textSize="16sp"
@@ -155,9 +156,9 @@
             <!-- 登陆按钮 -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="58dp"
                 android:layout_marginTop="16dp"
-                android:background="@mipmap/btn_login"
+                android:background="@drawable/btn"
                 android:orientation="vertical"
                 android:padding="6dp">
 

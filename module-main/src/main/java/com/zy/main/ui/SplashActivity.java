@@ -36,7 +36,7 @@ public class SplashActivity extends Activity {
         /*this.startActivity(new Intent(this,MainActivity.class));
         this.finish();*/
         ARouter.getInstance()
-                .build(RouterActivityPath.Sign.PAGER_LOGIN)
+                .build(RouterActivityPath.Main.PAGER_MAIN)
                 .navigation();
         finish();
     }

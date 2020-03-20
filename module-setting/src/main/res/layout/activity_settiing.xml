@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="settingViewModel"
+            type="com.zy.setting.viewmodel.SettingViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--顶部导航-->
+        <LinearLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_return"
+                android:padding="2dp"
+                binding:onClickCommand="@{settingViewModel.returnBtnOnClickCommand}" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="42dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设置"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <!--选项栏-->
+        <LinearLayout
+            android:id="@+id/op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab_bar"
+            android:orientation="vertical">
+
+
+            <!--用户服务协议-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="用户服务协议"
+                    android:textSize="24dp"
+                    binding:onClickCommand="@{settingViewModel.servicePolicyBtnOnClickCommand}"/>
+
+            </LinearLayout>
+            <!--隐私协议-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="隐私协议"
+                    android:textSize="24dp"
+                    binding:onClickCommand="@{settingViewModel.privacyPolicyBtnOnClickCommand}"/>
+
+            </LinearLayout>
+
+            <!--关于-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="关于"
+                    android:textSize="24dp"
+                    binding:onClickCommand="@{settingViewModel.aboutBtnOnClickCommand}"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--退出按钮-->
+        <LinearLayout
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_below="@id/op"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/logout_btn"
+                android:text="退出"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                binding:onClickCommand="@{settingViewModel.LogoutBtnOnClickCommand}" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

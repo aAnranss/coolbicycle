@@ -1,10 +1,13 @@
-package com.zy.user.ui.viewmodel;
+package com.zy.user.viewmodel;
 
 import android.app.Application;
 import android.text.TextUtils;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.ObservableField;
+
+import com.alibaba.android.arouter.launcher.ARouter;
+import com.zy.base.router.RouterFragmentPath;
 
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.goldze.mvvmhabit.binding.command.BindingAction;
@@ -26,14 +29,10 @@ public class UserDetailViewModel extends BaseViewModel {
     }
 
     //回传参数
-    public BindingCommand backOnClickCommand = new BindingCommand(new BindingAction() {
+    public BindingCommand returnBtnOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            if (!TextUtils.isEmpty(nameObservable.get())) {
-                //RxBus解耦组件通信
-                RxBus.getDefault().post(nameObservable.get());
-            }
-            finish();
+            onBackPressed();
         }
     });
 }

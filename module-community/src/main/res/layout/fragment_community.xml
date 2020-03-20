@@ -34,7 +34,6 @@
             binding:adapter="@{viewModel.adapter}"
             binding:itemBinding="@{viewModel.itemBinding}"
             binding:items="@{viewModel.items}"
-            binding:onPageSelectedCommand="@{viewModel.onPageSelectedCommand}"
             binding:pageTitles="@{viewModel.pageTitles}" />
 
     </LinearLayout>

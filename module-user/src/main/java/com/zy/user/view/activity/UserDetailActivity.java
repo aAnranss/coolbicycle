@@ -1,4 +1,4 @@
-package com.zy.user.ui.activity;
+package com.zy.user.view.activity;
 
 import android.os.Bundle;
 
@@ -9,7 +9,7 @@ import com.zy.base.router.RouterActivityPath;
 import com.zy.user.BR;
 import com.zy.user.R;
 import com.zy.user.databinding.ActivityUserDetailBinding;
-import com.zy.user.ui.viewmodel.UserDetailViewModel;
+import com.zy.user.viewmodel.UserDetailViewModel;
 
 import me.goldze.mvvmhabit.base.BaseActivity;
 

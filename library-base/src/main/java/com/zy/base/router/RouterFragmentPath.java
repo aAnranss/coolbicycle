@@ -15,6 +15,12 @@ public class RouterFragmentPath {
         public static final String PAGER_COMMUNITY = COMMUNITY + "/Community";
     }
 
+    public static class Recommend {
+        private static final String RECOMMEND = "/recommend";
+        //推荐页
+        public static final String PAGER_RECOMMEND = RECOMMEND + "/Recommend";
+    }
+
     /**
      * 用户组件
      */
@@ -23,4 +29,5 @@ public class RouterFragmentPath {
         /*我的*/
         public static final String PAGER_ME = USER + "/Me";
     }
+
 }
