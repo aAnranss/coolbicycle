@@ -36,8 +36,8 @@
                     android:layout_weight="1"
                     android:layout_gravity="left">
                     <ImageView
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
                         android:layout_marginBottom="16dp"
                         android:src="@mipmap/cartoon"/>
                 </LinearLayout>
@@ -103,239 +103,6 @@
             </LinearLayout>
 
         </LinearLayout>
-        <!-- 菜单栏 -->
-        <!--<RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="top"
-            android:padding="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-                android:orientation="vertical">
-                &lt;!&ndash;1&ndash;&gt;
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_project"
-                        android:background="@color/textColor"/>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="17"
-                        android:layout_gravity="center"
-                        android:text="项目"
-                        android:textSize="20dp"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_right"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/textColorHint"/>
-                &lt;!&ndash;2&ndash;&gt;
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="10sp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_wechat"
-                        android:background="@color/textColor"/>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="17"
-                        android:text="微信"
-                        android:layout_gravity="center"
-                        android:textSize="20dp"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_right"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/textColorHint"/>
-                &lt;!&ndash;3&ndash;&gt;
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_favorite"
-                        android:background="@color/textColor"/>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="17"
-                        android:layout_gravity="center"
-                        android:text="收藏"
-                        android:textSize="20dp"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_right"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/textColorHint"/>
-                &lt;!&ndash;4&ndash;&gt;
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="@color/white">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_todo"
-                        android:background="@color/textColor"/>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="17"
-                        android:layout_gravity="center"
-                        android:text="TODO"
-                        android:textSize="20dp"/>
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_right" />
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/textColorHint"/>
-                &lt;!&ndash;5&ndash;&gt;
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="68dp"
-                    android:layout_gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="10dp"
-                    android:background="@color/white"
-                    binding:onClickCommand="@{viewModel.settingBtnOnCommand}">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_setting"
-                        android:background="@color/textColor"/>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:background="@color/textColorHint" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="设置"
-                        android:textSize="20dp"
-                        android:layout_gravity="center"
-                        android:layout_weight="17"/>
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="22dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:src="@mipmap/ic_right"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/textColorHint"/>
-
-            </LinearLayout>
-
-        </RelativeLayout>-->
 
         <!--选项栏-->
         <LinearLayout
@@ -358,7 +125,7 @@
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
                     android:text="选项卡1"
-                    android:textSize="24dp" />
+                    android:textSize="18dp" />
 
             </LinearLayout>
             <!--版权声明-->
@@ -375,11 +142,11 @@
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
                     android:text="意见反馈"
-                    android:textSize="24dp"
+                    android:textSize="18dp"
                     binding:onClickCommand="@{viewModel.feedbackBtnOnClickCommand}"/>
 
             </LinearLayout>
-            <!--退出-->
+            <!--设置-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
@@ -392,7 +159,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:text="设置"
-                    android:textSize="24dp"
+                    android:textSize="18dp"
                     binding:onClickCommand="@{viewModel.settingBtnOnCommand}"/>
 
             </LinearLayout>

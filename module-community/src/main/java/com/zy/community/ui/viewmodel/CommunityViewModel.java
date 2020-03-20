@@ -10,7 +10,9 @@ import com.zy.community.BR;
 import com.zy.community.R;
 import com.zy.community.ui.adapter.ViewPagerBindingAdapter;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import me.goldze.mvvmhabit.base.BaseViewModel;
@@ -27,6 +29,10 @@ import me.tatarka.bindingcollectionadapter2.ItemBinding;
 public class CommunityViewModel extends BaseViewModel {
     public SingleLiveEvent<String> itemClickEvent = new SingleLiveEvent<>();
 
+    private String[] titles = {"论坛","推荐","热门"};
+
+    private List<ViewPagerItemViewModel> itemViewModels;
+
     public CommunityViewModel(@NonNull Application application) {
         super(application);
     }
@@ -34,10 +40,12 @@ public class CommunityViewModel extends BaseViewModel {
     public void addPage() {
         items.clear();
         //模拟3个ViewPager页面
-        for (int i = 1; i <= 3; i++) {
+        itemViewModels = new ArrayList<>();
+        itemViewModels.add(new ViewPagerItemViewModel(this,null));
+        /*for (int i = 1; i <= 3; i++) {
             ViewPagerItemViewModel itemViewModel = new ViewPagerItemViewModel(this, null);
             items.add(itemViewModel);
-        }
+        }*/
     }
 
     //给ViewPager添加ObservableList
@@ -48,8 +56,7 @@ public class CommunityViewModel extends BaseViewModel {
     public final BindingViewPagerAdapter.PageTitles<ViewPagerItemViewModel> pageTitles = new BindingViewPagerAdapter.PageTitles<ViewPagerItemViewModel>() {
         @Override
         public CharSequence getPageTitle(int position, ViewPagerItemViewModel item) {
-            String[] str = {"论坛","博客","咨询"};
-            return str[position] ;
+            return titles[position] ;
         }
     };
     //给ViewPager添加Adpter，请使用自定义的Adapter继承BindingViewPagerAdapter，重写onBindBinding方法

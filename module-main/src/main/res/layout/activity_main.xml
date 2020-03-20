@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="viewModel"
             type="me.goldze.mvvmhabit.base.BaseViewModel" />
@@ -11,23 +12,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <FrameLayout
             android:id="@+id/framelayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_above="@+id/pager_bottom_tab"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
-        <View style="@style/ViewLineStyle"/>
+        <!--<View style="@style/ViewLineStyle" />-->
 
         <me.majiajie.pagerbottomtabstrip.PageNavigationView
             android:id="@+id/pager_bottom_tab"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            app:elevation="8dp"/>
+            android:layout_height="58dp"
+            app:elevation="8dp" />
 
     </LinearLayout>
 

@@ -27,4 +27,21 @@
         <item name="android:background">@color/viewLineColor</item>
     </style>
 
+    <!--输入框hint字体大小-->
+    <style name="EditHintTextSize">
+        <item name="android:textSize">14dp</item>
+    </style>
+    <!--顶部导航栏字体大小-->
+    <style name="TabBarTitleTextSize">
+        <item name="android:textSize">18dp</item>
+    </style>
+    <!--其他字体大小-->
+    <style name="OtherTextSize">
+        <item name="android:textSize">16dp</item>
+    </style>
+    <!--文本页面文字大小-->
+    <style name="PageTextSize">
+        <item name="android:textSize">16dp</item>
+    </style>
+
 </resources>

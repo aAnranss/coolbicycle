@@ -24,13 +24,13 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:gravity="center"
                 android:background="@color/white"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_marginLeft="5dp"
                     android:background="@mipmap/ic_return"
                     android:padding="2dp"
@@ -43,15 +43,10 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="隐私政策"
-                    android:textSize="20dp" />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#D3D3D3" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,7 +61,8 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/user_privacy_policy" />
+                        android:text="@string/user_privacy_policy"
+                        android:textSize="16dp" />
                 </ScrollView>
 
             </LinearLayout>

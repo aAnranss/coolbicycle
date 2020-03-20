@@ -35,7 +35,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/title_user_detail_page"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
         </LinearLayout>
     </RelativeLayout>

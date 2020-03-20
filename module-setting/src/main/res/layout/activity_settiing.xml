@@ -24,8 +24,8 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_marginLeft="5dp"
                 android:background="@mipmap/ic_return"
                 android:padding="2dp"
@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="设置"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
         </LinearLayout>
         <!--选项栏-->
@@ -53,7 +53,7 @@
             <!--用户服务协议-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
@@ -64,14 +64,14 @@
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
                     android:text="用户服务协议"
-                    android:textSize="24dp"
+                    android:textSize="16dp"
                     binding:onClickCommand="@{settingViewModel.servicePolicyBtnOnClickCommand}"/>
 
             </LinearLayout>
             <!--隐私协议-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
@@ -82,7 +82,7 @@
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
                     android:text="隐私协议"
-                    android:textSize="24dp"
+                    android:textSize="16dp"
                     binding:onClickCommand="@{settingViewModel.privacyPolicyBtnOnClickCommand}"/>
 
             </LinearLayout>
@@ -90,7 +90,7 @@
             <!--关于-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="68dp"
+                android:layout_height="48dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
@@ -101,7 +101,7 @@
                     android:layout_height="fill_parent"
                     android:gravity="center_vertical"
                     android:text="关于"
-                    android:textSize="24dp"
+                    android:textSize="16dp"
                     binding:onClickCommand="@{settingViewModel.aboutBtnOnClickCommand}"/>
 
             </LinearLayout>
@@ -111,7 +111,7 @@
         <LinearLayout
             android:id="@+id/logout_btn"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="48dp"
             android:layout_below="@id/op"
             android:layout_marginTop="50dp"
             android:gravity="center">
@@ -122,7 +122,7 @@
                 android:background="@drawable/logout_btn"
                 android:text="退出"
                 android:textColor="@color/white"
-                android:textSize="24dp"
+                android:textSize="18dp"
                 android:textStyle="bold"
                 binding:onClickCommand="@{settingViewModel.LogoutBtnOnClickCommand}" />
 

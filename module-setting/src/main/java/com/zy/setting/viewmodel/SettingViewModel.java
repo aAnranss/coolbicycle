@@ -29,6 +29,7 @@ public class SettingViewModel extends BaseViewModel {
         super(application);
     }
 
+    //顶部返回按钮的点击事件
     public BindingCommand returnBtnOnClickCommand = new BindingCommand(new BindingAction() {
         @Override
         public void call() {

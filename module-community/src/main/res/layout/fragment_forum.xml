@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <data>
-        <variable
-            name="recommendViewModel"
-            type="com.zy.community.ui.viewmodel.RecommendViewModel" />
-    </data>
+<data>
+    <variable
+        name="forumViewModel"
+        type="com.zy.community.ui.viewmodel.ForumViewModel" />
+</data>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="推荐页"/>
+            android:text="论坛页"/>
     </RelativeLayout>
-
 </layout>

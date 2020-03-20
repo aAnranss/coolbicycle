@@ -12,19 +12,28 @@
         xmlns:binding="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <com.google.android.material.tabs.TabLayout
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/tabs"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="@color/colorPrimaryDark"
-            app:tabSelectedTextColor="@color/colorPrimaryDark"
-            app:tabTextColor="@android:color/black" />
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <View style="@style/ViewLineStyle" />
+            <com.google.android.material.tabs.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/colorPrimaryDark"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextColor="@android:color/black" />
+
+        </LinearLayout>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"

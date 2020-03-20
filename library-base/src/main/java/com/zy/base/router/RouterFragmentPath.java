@@ -21,6 +21,18 @@ public class RouterFragmentPath {
         public static final String PAGER_RECOMMEND = RECOMMEND + "/Recommend";
     }
 
+    public static class Hot {
+        private static final String HOT = "/hot";
+        //热门页
+        public static final String PAGER_HOT = HOT + "/Hot";
+    }
+
+    public static class Forum {
+        private static final String FORUM = "/forum";
+        //论坛页
+        public static final String PAGER_FORUM = FORUM + "/Forum";
+    }
+
     /**
      * 用户组件
      */
